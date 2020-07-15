@@ -1,38 +1,45 @@
-let post  = document.getElementById("ButtonPost");
-let clear  = document.getElementById("ButtonClear");
-let mark  = document.getElementById("ButtonMark");
-let del  = document.getElementById("ButtonDelete");
 
-post.addEventListener("click",TodoPost);
-clear.addEventListener("click",TodoClear);
-mark.addEventListener("click",TodoMark);
-del.addEventListener("click",TodoDel);
+$("#ButtonPost").on("click",TodoPost)
+$("#ButtonClear").on("click",TodoClear);
+$("#ButtonMark").on("click",TodoMark);
+$("#ButtonDelete").on("click",TodoDel);
 
 function TodoPost(e){
 e.preventDefault();
 // Necesito obtener el valor de la caja
-var todo = document.getElementById("todoText").value;
-var list = document.getElementById("todoList");
+//var todo = document.getElementById("todoText").value;
+var todo = $('#todoText').val();
+var list = $('#todoList').get(0);
+//var list = document.getElementById("todoList");
 
-let currentListHTML = list.innerHTML;
-list.innerHTML = currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>';
+//let currentListHTML = list.innerHTML;
+let currentListHTML = $('#todoList').html();
+$('#todoList').html(currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>');
+//list.innerHTML = currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>';
+
+
+
 }
 function TodoClear(e){
     e.preventDefault();
-    var todos = document.getElementsByName("todo");
+
+    var todos = $("[name='todo']");
+    //var todos = document.getElementsByName("todo");
     for(var i = 0; i < todos.length; i++){
         todos[i].checked = false;
     }
 }
 function TodoMark(e){
     e.preventDefault();
-    var todos = document.getElementsByName("todo");
+    //var todos = document.getElementsByName("todo");
+    var todos = $("[name='todo']");
     for(var i = 0; i < todos.length; i++){
         todos[i].checked = true;
     }
 }
 function TodoDel(e){
     e.preventDefault();
-    var list = document.getElementById("todoList");
-    list.innerHTML = "";
+    $('#todoList').text("");
+    //var list = document.getElementById("todoList");
+    //list.text() = "";
 }
