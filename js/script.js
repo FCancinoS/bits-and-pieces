@@ -5,20 +5,20 @@ $("#ButtonMark").on("click",TodoMark);
 $("#ButtonDelete").on("click",TodoDel);
 
 function TodoPost(e){
-e.preventDefault();
-// Necesito obtener el valor de la caja
-//var todo = document.getElementById("todoText").value;
-var todo = $('#todoText').val();
-var list = $('#todoList').get(0);
-//var list = document.getElementById("todoList");
+    e.preventDefault();
+    // Necesito obtener el valor de la caja
+    //var todo = document.getElementById("todoText").value;
 
-//let currentListHTML = list.innerHTML;
-let currentListHTML = $('#todoList').html();
-$('#todoList').html(currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>');
-//list.innerHTML = currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>';
-
-
-
+    var todo = $('#todoText').val();
+    var list = $('#todoList').get(0);
+    //var list = document.getElementById("todoList");
+    if(todo != ""){
+        //let currentListHTML = list.innerHTML;
+        let currentListHTML = $('#todoList').html();
+        $('#todoList').html(currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>');
+        //list.innerHTML = currentListHTML + '<input type = "checkbox" name="todo" /> ' + todo + '<br>';
+        $('#todoText').val("");
+    }
 }
 function TodoClear(e){
     e.preventDefault();
