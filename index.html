@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bits & Pieces</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicons/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="img/favicons/favicon-128x128.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="navbar navbar-default">
-    <h1 class="todoTitle">Todo List
-    </h1>
-  </header>
+<header>
+<h1>Bits & Pieces</h1>
+        <p>This is a collection of tiny experiments, fun prototypes, and mini projects. Not polished, just raw creativity.</p>
+</header>
+<main>
+        <ul>
+            <li><a href="Micro-ToDo/index.html">Micro-ToDo</a></li>
+            <li><a href="ToDo-jquery/index.html">ToDo-jquery</a></li>
+            <!-- Add more projects here -->
+        </ul>
+        <!--img src="./assets/img/pixel-room.jpeg" alt=""-->
+    </main>
 
-  <main class="wrapper" role="main">
-    <section class="panel panel-default">
-        <div class="buttons">
-            <button class="clearButton btn-info" id="ButtonClear"> Clear all <i class="fa-solid fa-broom"></i></button>
-            <button class="markAllButton btn-success" id="ButtonMark"> Mark all <i class="fa-solid fa-check-double"></i></button>
-            <button class="deleteButton btn-danger" id="ButtonDelete">Delete all <i class="fa-solid fa-trash"></i></button>
-          </div>
-
-      <div class="panel-body">
-        
-        <form class="todoForm">
-          <fieldset>
-            <input type="text" class="newTodo form-control" id="todoText">
-            <button type="submit" class="submitButton" id="ButtonPost"><i class="fa-solid fa-plus"></i></button>
-            
-          </fieldset>
-        </form>
-
-        
-
-        <div id="todoList" class="listOfTodos"></div>
-      </div>
-    </section>
-  </main>
-
-  <footer role="footer" class="footer">
-    Todo list application
-  </footer>
-
-  <script src="js/script.js"></script>
+<footer>
+<p> &#169 fcancino</p>
+</footer>
 </body>
 </html>

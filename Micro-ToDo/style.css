@@ -1,0 +1,89 @@
+*{
+    margin: auto;
+}
+body{
+    background-color: black;
+}
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    font-family: champagne;
+    font-size: 30px;
+    color: white;
+   }
+.container{
+    text-align: center;
+    margin-top: 20px;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 80%;
+    padding: 1%;
+    bottom: 0;
+}
+ul{
+    padding-bottom: 10px;
+}
+li{
+    border: 1px rgb(143, 141, 141) solid;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 90%;
+    height: 20%;
+    display:flex;
+    margin-top: 10px;
+    display: flex;
+    margin-right: 18%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: champagne;
+    font-size: 17px;
+    color: white;
+}
+#entrada{
+    border: 1px white solid;
+    border-radius: 5px;
+    text-align: center;
+    font-family: champagne;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+/*boton de añadir*/
+#firstbutton{
+    border: 0px black solid;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(135, 143, 248);
+    background-color: rgba(255, 0, 0, 0);
+}
+/* boton para borrar*/
+.borrar{
+    background-color:  rgba(255, 0, 0, 0);
+    border: 0px;
+    color: rgb(135, 143, 248);
+    font-size: 25px;
+}
+
+/*Clase de checkbox*/
+.revisado{
+    background-color:  rgb(135, 143, 248);
+    border: 0px rgb(135, 143, 248) solid;
+    border-radius: 51%;
+    color: black;
+    font-size: 25px;
+    
+}
+.mini{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.ready{
+    text-decoration: line-through;
+}
+@font-face{
+font-family: champagne;
+ src: url(Champagne\ &\ Limousines.ttf);
+}
